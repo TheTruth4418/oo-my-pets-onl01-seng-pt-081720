@@ -29,8 +29,16 @@ class Owner
   end
 
   def sell_pets
-      Dog.all.map {|x| x.mood = "nervous"}
-      Cat.all.map {|x| x.mood = "nervous"}
+      Dog.all.map do |x|
+         x.mood = "nervous"
+         x.owner = nil
+       end
+       
+      Cat.all.map do |x|
+        x.mood = "nervous"
+        x.owner = nil
+      end
+      
   end
 
   def self.count
