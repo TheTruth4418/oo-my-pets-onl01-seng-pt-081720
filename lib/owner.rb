@@ -27,4 +27,8 @@ class Owner
   def cats
     Cat.all.find_all{|x| x.owner == self}
   end
+
+  def dogs
+    Dog.all.find_all{|x| x.owner == self}
+  end
 end
