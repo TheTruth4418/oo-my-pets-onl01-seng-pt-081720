@@ -25,6 +25,6 @@ class Owner
   end
 
   def cats
-    Cat.all.length
+    Cat.all
   end
 end
