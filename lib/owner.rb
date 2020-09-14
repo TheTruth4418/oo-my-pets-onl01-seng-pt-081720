@@ -24,6 +24,10 @@ class Owner
     Dog.all.map {|x| x.mood = "happy"}
   end
 
+  def feed_cats
+    Cat.all.map {|x| x.mood = "happy"}
+  end
+
   def self.count
     @@all.length
   end
