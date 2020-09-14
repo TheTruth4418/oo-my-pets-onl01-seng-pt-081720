@@ -20,6 +20,10 @@ class Owner
     dog = Dog.new(name,self)
   end
 
+  def walk_dogs
+    Dog.all.map {|x| @mood = "happy"}
+  end
+
   def self.count
     @@all.length
   end
