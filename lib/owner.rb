@@ -21,7 +21,7 @@ class Owner
   end
 
   def walk_dogs
-    Dog.all.map {|x| @mood = "happy"}
+    Dog.all.map {|x| x.mood = "happy"}
   end
 
   def self.count
