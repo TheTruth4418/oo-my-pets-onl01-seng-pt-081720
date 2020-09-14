@@ -13,11 +13,7 @@ class Owner
   end
 
   def buy_cat(name)
-    Cat.all.map do |x|
-      if x.name == name
-        x.owner = self
-      end
-    end
+    cat = Cat.new(name,self)
   end
 
   def self.count
