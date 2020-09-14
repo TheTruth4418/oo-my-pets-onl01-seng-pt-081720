@@ -9,7 +9,7 @@ class Owner
   def say_species
     p "I am a #{@species}."
   end
-  def all 
-    @@all 
+  def all
+    @@all
   end
 end
