@@ -28,6 +28,11 @@ class Owner
     Cat.all.map {|x| x.mood = "happy"}
   end
 
+  def sell_pets
+      Dog.all.map {|x| x.mood = "nervous"}
+      Cat.all.map {|x| x.mood = "nervous"}
+  end
+
   def self.count
     @@all.length
   end
