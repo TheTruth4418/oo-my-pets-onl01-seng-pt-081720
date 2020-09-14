@@ -25,6 +25,6 @@ class Owner
   end
 
   def cats
-    Cat.all.find_all{|x| x.@owner == self}
+    Cat.all.find_all{|x| x.owner == self}
   end
 end
