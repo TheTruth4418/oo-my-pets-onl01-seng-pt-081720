@@ -20,4 +20,8 @@ class Owner
     @@all
   end
 
+  def reset_all
+    @@all.clear
+  end
+
 end
