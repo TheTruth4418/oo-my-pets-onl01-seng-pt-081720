@@ -5,6 +5,6 @@ class Owner
     @species = species
   end
   def say_species
-    @species
+    p "I am a #{@species}."
   end
 end
