@@ -13,7 +13,7 @@ class Owner
   end
 
   def buy_cat(name)
-    Cat.map do |x|
+    Cat.all.map do |x|
       if x.name == name
         x.owner = self
       end
