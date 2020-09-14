@@ -12,6 +12,13 @@ class Owner
     p "I am a #{@species}."
   end
 
+  def buy_cat(name)
+    Cat.map do |x|
+      if x.name == name
+        x.owner = self
+    end
+  end
+
   def self.count
     @@all.length
   end
